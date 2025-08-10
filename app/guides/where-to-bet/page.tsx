@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Best Disc Golf Betting Sites 2024 | Top Sportsbooks Reviewed",
+  title: "Best Disc Golf Betting Sites 2025 | Top Sportsbooks Reviewed",
   description:
     "Find the best disc golf betting sites with our comprehensive reviews. Compare odds, bonuses, and features at top-rated sportsbooks for disc golf betting.",
   keywords:
@@ -20,7 +20,7 @@ export default function WhereToBet() {
       <section className="bg-gradient-to-br from-purple-900 via-purple-800 to-blue-800 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6">Best Disc Golf Betting Sites 2024</h1>
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6">Best Disc Golf Betting Sites 2025</h1>
             <p className="text-xl text-purple-100 mb-8">
               Compare top-rated sportsbooks offering disc golf betting markets, exclusive bonuses, and competitive odds.
             </p>

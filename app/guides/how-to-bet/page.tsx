@@ -7,29 +7,170 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 
 export const metadata: Metadata = {
-  title: "How to Bet on Disc Golf: Complete Beginner's Guide 2024",
+  title: "How to Bet on Disc Golf: Complete Beginner's Guide 2025 | Step-by-Step Tutorial",
   description:
-    "Learn how to bet on disc golf with our step-by-step guide. Understand odds, betting types, strategies, and tips for successful disc golf betting.",
+    "Learn exactly how to bet on disc golf with our comprehensive step-by-step guide. Discover the best sportsbooks, understand odds, and master winning strategies for disc golf betting success.",
   keywords:
-    "how to bet on disc golf, disc golf betting guide, disc golf odds, disc golf betting strategy, disc golf betting tips, professional disc golf betting",
+    "how to bet on disc golf, disc golf betting guide, disc golf betting tutorial, disc golf odds explained, disc golf betting strategy, disc golf betting tips, professional disc golf betting, disc golf sportsbooks, PDGA betting guide",
+  openGraph: {
+    title: "How to Bet on Disc Golf: Complete Step-by-Step Guide 2025",
+    description:
+      "Master disc golf betting with our expert tutorial. Learn odds, strategies, and find the best sportsbooks.",
+    type: "article",
+    url: "https://your-domain.com/guides/how-to-bet",
+  },
+  alternates: {
+    canonical: "https://your-domain.com/guides/how-to-bet",
+  },
 }
 
 export default function HowToBet() {
   return (
     <div className="min-h-screen bg-white">
+      {/* Enhanced SEO Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            name: "How to Bet on Disc Golf",
+            description: "Complete step-by-step guide to betting on disc golf tournaments",
+            image: "https://your-domain.com/disc-golf-betting-guide.jpg",
+            totalTime: "PT15M",
+            estimatedCost: {
+              "@type": "MonetaryAmount",
+              currency: "USD",
+              value: "10",
+            },
+            supply: [
+              {
+                "@type": "HowToSupply",
+                name: "Sportsbook Account",
+              },
+              {
+                "@type": "HowToSupply",
+                name: "Initial Deposit",
+              },
+            ],
+            tool: [
+              {
+                "@type": "HowToTool",
+                name: "CoolBet Sportsbook",
+              },
+            ],
+            step: [
+              {
+                "@type": "HowToStep",
+                name: "Choose a Sportsbook",
+                text: "Select a reputable sportsbook that offers disc golf betting markets",
+                url: "https://your-domain.com/guides/how-to-bet#choose-sportsbook",
+              },
+              {
+                "@type": "HowToStep",
+                name: "Understand Disc Golf Odds",
+                text: "Learn how to read and interpret disc golf betting odds",
+                url: "https://your-domain.com/guides/how-to-bet#understand-odds",
+              },
+              {
+                "@type": "HowToStep",
+                name: "Place Your First Bet",
+                text: "Follow our step-by-step process to place your first disc golf bet",
+                url: "https://your-domain.com/guides/how-to-bet#place-bet",
+              },
+            ],
+          }),
+        }}
+      />
+
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-green-900 via-green-800 to-blue-800 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6">How to Bet on Disc Golf: Complete Guide</h1>
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6">
+              How to Bet on Disc Golf: Complete Step-by-Step Guide
+            </h1>
             <p className="text-xl text-green-100 mb-8">
-              Master disc golf betting with our step-by-step guide. From understanding odds to placing your first bet.
+              Master disc golf betting with our comprehensive tutorial. From understanding odds to placing winning bets
+              - everything you need to know in 2025.
             </p>
-            <Button asChild size="lg" className="bg-blue-500 hover:bg-blue-600">
-              <Link href="https://coolbet.com" target="_blank" rel="noopener noreferrer">
-                Start Betting Today <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild size="lg" className="bg-blue-500 hover:bg-blue-600">
+                <Link href="https://coolbet.com" target="_blank" rel="noopener noreferrer">
+                  Start Betting Today <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="border-white/30 text-white hover:bg-white/10 bg-transparent"
+              >
+                <Link href="#quick-start">Quick Start Guide</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quick Start Section */}
+      <section id="quick-start" className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+              Quick Start: Bet on Disc Golf in 5 Minutes
+            </h2>
+
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              <Card className="text-center border-2 border-blue-200">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                    1
+                  </div>
+                  <CardTitle>Choose CoolBet</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 mb-4">
+                    Sign up with our recommended sportsbook for the best disc golf betting experience.
+                  </p>
+                  <Button asChild className="bg-blue-500 hover:bg-blue-600">
+                    <Link href="https://coolbet.com" target="_blank" rel="noopener noreferrer">
+                      Join CoolBet
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="text-center border-2 border-green-200">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                    2
+                  </div>
+                  <CardTitle>Make Deposit</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 mb-4">
+                    Fund your account with as little as $10 to start betting on disc golf tournaments.
+                  </p>
+                  <div className="text-sm text-gray-500">Minimum: $10 | Bonus: 100% Match</div>
+                </CardContent>
+              </Card>
+
+              <Card className="text-center border-2 border-purple-200">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-purple-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                    3
+                  </div>
+                  <CardTitle>Place Your Bet</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 mb-4">
+                    Navigate to disc golf markets and place your first bet on upcoming tournaments.
+                  </p>
+                  <div className="text-sm text-gray-500">Start with $5-10 bets</div>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
@@ -47,12 +188,12 @@ export default function HowToBet() {
             </Alert>
 
             <div className="prose prose-lg max-w-none">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Getting Started with Disc Golf Betting</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Complete Guide to Disc Golf Betting</h2>
 
               <div className="mb-8">
                 <Image
                   src="/disc-golf-betting-leaderboard.png"
-                  alt="Disc golf betting odds and mobile betting interface"
+                  alt="How to bet on disc golf - step by step tutorial with odds and betting interface"
                   width={800}
                   height={400}
                   className="rounded-lg shadow-lg mb-6"
@@ -60,10 +201,32 @@ export default function HowToBet() {
               </div>
 
               <p className="text-lg text-gray-700 mb-6">
-                Betting on disc golf is becoming increasingly popular as the sport grows and more sportsbooks offer
-                markets. This comprehensive guide will walk you through everything you need to know to start betting
-                successfully on disc golf tournaments.
+                <strong>Disc golf betting</strong> is exploding in popularity as the sport grows worldwide. With major
+                tournaments offering substantial prize pools and professional coverage, betting on disc golf has never
+                been more accessible or exciting. This complete guide will teach you everything you need to know to
+                start betting successfully on disc golf in 2025.
               </p>
+
+              <div className="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8">
+                <h3 className="font-bold text-blue-900 mb-2">🎯 Why Bet on Disc Golf?</h3>
+                <ul className="text-blue-800 space-y-1">
+                  <li>
+                    • <strong>Undervalued market:</strong> Less competition means better odds
+                  </li>
+                  <li>
+                    • <strong>Predictable factors:</strong> Weather and course knowledge matter
+                  </li>
+                  <li>
+                    • <strong>Year-round action:</strong> Tournaments from February to October
+                  </li>
+                  <li>
+                    • <strong>Growing coverage:</strong> More live streams and data available
+                  </li>
+                  <li>
+                    • <strong>Diverse betting options:</strong> From tournament winners to prop bets
+                  </li>
+                </ul>
+              </div>
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Step 1: Choose a Reputable Sportsbook</h3>
               <p className="text-gray-700 mb-6">
@@ -334,32 +497,32 @@ export default function HowToBet() {
                 </ul>
               </div>
             </div>
-
-            {/* CTA Section */}
-            <div className="bg-gradient-to-r from-green-900 to-blue-800 text-white p-8 rounded-lg text-center">
-              <h3 className="text-2xl font-bold mb-4">Ready to Place Your First Disc Golf Bet?</h3>
-              <p className="text-green-100 mb-6">
-                Start with our recommended sportsbook and use the strategies you've learned to make informed bets.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="bg-blue-500 hover:bg-blue-600">
-                  <Link href="https://coolbet.com" target="_blank" rel="noopener noreferrer">
-                    Start Betting Now <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
-                <Button
-                  asChild
-                  variant="outline"
-                  size="lg"
-                  className="border-white/30 text-white hover:bg-white/10 bg-transparent"
-                >
-                  <Link href="/guides/where-to-bet">Find Best Sportsbooks</Link>
-                </Button>
-              </div>
-            </div>
           </div>
         </div>
       </section>
+
+      {/* CTA Section */}
+      <div className="bg-gradient-to-r from-green-900 to-blue-800 text-white p-8 rounded-lg text-center">
+        <h3 className="text-2xl font-bold mb-4">Ready to Place Your First Disc Golf Bet?</h3>
+        <p className="text-green-100 mb-6">
+          Start with our recommended sportsbook and use the strategies you've learned to make informed bets.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button asChild size="lg" className="bg-blue-500 hover:bg-blue-600">
+            <Link href="https://coolbet.com" target="_blank" rel="noopener noreferrer">
+              Start Betting Now <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          </Button>
+          <Button
+            asChild
+            variant="outline"
+            size="lg"
+            className="border-white/30 text-white hover:bg-white/10 bg-transparent"
+          >
+            <Link href="/guides/where-to-bet">Find Best Sportsbooks</Link>
+          </Button>
+        </div>
+      </div>
     </div>
   )
 }

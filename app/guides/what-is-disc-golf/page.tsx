@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "What is Disc Golf? Complete Beginner's Guide to Disc Golf Betting",
+  title: "What is Disc Golf? Complete Beginner's Guide to Disc Golf Betting 2025",
   description:
     "Learn everything about disc golf: rules, scoring, equipment, and why it's perfect for betting. Complete beginner's guide to understanding disc golf before you start betting.",
   keywords:

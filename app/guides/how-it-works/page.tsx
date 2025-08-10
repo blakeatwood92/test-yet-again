@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "How Disc Golf Betting Works: Complete Strategy Guide 2024",
+  title: "How Disc Golf Betting Works: Complete Strategy Guide 2025",
   description:
     "Understand how disc golf betting works with our comprehensive guide. Learn betting strategies, market analysis, and tips for consistent profits.",
   keywords:

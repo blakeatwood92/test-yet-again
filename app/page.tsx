@@ -1,4 +1,4 @@
-import { ArrowRight, Target, TrendingUp, BookOpen, Users, Star } from "lucide-react"
+import { ArrowRight, Target, TrendingUp, BookOpen, Users, Star, Calendar, Trophy } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
@@ -15,19 +15,19 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <Badge className="bg-green-500/20 text-green-100 border-green-400/30 w-fit">
-                #1 Disc Golf Betting Guide
+                #1 Disc Golf Betting Guide - Powered by CoolBet
               </Badge>
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
                 Master Disc Golf <span className="text-green-400">Betting</span> Like a Pro
               </h1>
               <p className="text-xl text-blue-100 leading-relaxed">
-                Discover the best disc golf betting strategies, top sportsbooks, and expert insights. Start winning with
-                our comprehensive guides and proven tips.
+                Get expert disc golf betting tips, tournament previews, and exclusive CoolBet bonuses. Start winning
+                with our proven strategies and live tournament coverage.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="bg-green-500 hover:bg-green-600 text-white">
                   <Link href="https://coolbet.com" target="_blank" rel="noopener noreferrer">
-                    Start Betting Now <ArrowRight className="ml-2 h-5 w-5" />
+                    Join CoolBet Now <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
                 <Button
@@ -42,8 +42,8 @@ export default function HomePage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder-swu9j.png"
-                alt="Professional disc golf tournament betting"
+                src="/placeholder.svg?height=500&width=600&text=Professional+Disc+Golf+Tournament+Betting"
+                alt="Professional disc golf tournament betting with CoolBet"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-2xl"
@@ -53,63 +53,240 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Latest News Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Latest Disc Golf Betting News</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Stay ahead with tournament previews, betting odds, and expert analysis from the disc golf world.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <Badge className="w-fit mb-2 bg-blue-100 text-blue-800">Tournament Preview</Badge>
+                <CardTitle className="text-lg">2025 PDGA World Championships Betting Guide</CardTitle>
+                <CardDescription>Complete betting preview with CoolBet odds and expert picks</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Link
+                  href="/news/pdga-worlds-2024-betting-preview"
+                  className="text-blue-600 hover:text-blue-800 font-medium"
+                >
+                  Read Full Preview →
+                </Link>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <Badge className="w-fit mb-2 bg-green-100 text-green-800">Player Analysis</Badge>
+                <CardTitle className="text-lg">Paul McBeth vs Ricky Wysocki: Head-to-Head Stats</CardTitle>
+                <CardDescription>Betting insights for the sport's biggest rivalry</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Link
+                  href="/news/mcbeth-vs-wysocki-betting-analysis"
+                  className="text-blue-600 hover:text-blue-800 font-medium"
+                >
+                  View Analysis →
+                </Link>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <Badge className="w-fit mb-2 bg-purple-100 text-purple-800">Betting Tips</Badge>
+                <CardTitle className="text-lg">How Weather Affects Disc Golf Betting Odds</CardTitle>
+                <CardDescription>Expert guide to weather-based betting strategies</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Link href="/news/weather-betting-strategies" className="text-blue-600 hover:text-blue-800 font-medium">
+                  Learn Strategies →
+                </Link>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center">
+            <Button asChild variant="outline" size="lg">
+              <Link href="/news">View All News & Tournament Previews</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
-      <section className="py-20">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
               Why Choose Our Disc Golf Betting Platform?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Get the edge you need with expert analysis, proven strategies, and the best betting opportunities in disc
-              golf.
+              Get the edge you need with expert analysis, proven strategies, and exclusive CoolBet partnerships.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader className="text-center pb-4">
+          <div className="grid md:grid-cols-4 gap-8">
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow text-center">
+              <CardHeader className="pb-4">
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Target className="h-8 w-8 text-blue-600" />
                 </div>
                 <CardTitle className="text-xl">Expert Analysis</CardTitle>
               </CardHeader>
-              <CardContent className="text-center">
+              <CardContent>
                 <CardDescription className="text-base">
-                  In-depth player statistics, course analysis, and weather impact assessments for every major
-                  tournament.
+                  In-depth tournament previews, player stats, and course analysis for every major event.
                 </CardDescription>
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader className="text-center pb-4">
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow text-center">
+              <CardHeader className="pb-4">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <TrendingUp className="h-8 w-8 text-green-600" />
+                  <Calendar className="h-8 w-8 text-green-600" />
                 </div>
-                <CardTitle className="text-xl">Proven Strategies</CardTitle>
+                <CardTitle className="text-xl">Live Tournament Coverage</CardTitle>
               </CardHeader>
-              <CardContent className="text-center">
+              <CardContent>
                 <CardDescription className="text-base">
-                  Time-tested betting strategies specifically designed for disc golf tournaments and player matchups.
+                  Real-time updates, live betting opportunities, and round-by-round analysis.
                 </CardDescription>
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader className="text-center pb-4">
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow text-center">
+              <CardHeader className="pb-4">
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <BookOpen className="h-8 w-8 text-purple-600" />
+                  <Trophy className="h-8 w-8 text-purple-600" />
+                </div>
+                <CardTitle className="text-xl">CoolBet Partnership</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-base">
+                  Exclusive bonuses, enhanced odds, and premium betting features through our CoolBet partnership.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow text-center">
+              <CardHeader className="pb-4">
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <BookOpen className="h-8 w-8 text-orange-600" />
                 </div>
                 <CardTitle className="text-xl">Complete Guides</CardTitle>
               </CardHeader>
-              <CardContent className="text-center">
+              <CardContent>
                 <CardDescription className="text-base">
-                  From beginner basics to advanced techniques, our comprehensive guides cover everything you need to
-                  know.
+                  From beginner basics to advanced strategies, everything you need to bet successfully.
                 </CardDescription>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Upcoming Tournaments */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Upcoming Tournaments</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Get ready for the biggest disc golf betting opportunities of the season.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="border-l-4 border-l-blue-500">
+              <CardHeader>
+                <div className="flex justify-between items-start">
+                  <div>
+                    <CardTitle className="text-lg">PDGA World Championships</CardTitle>
+                    <CardDescription>Leicester, Massachusetts</CardDescription>
+                  </div>
+                  <Badge variant="outline">Aug 26-30, 2025</Badge>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-gray-600 mb-3">
+                  The most prestigious event in disc golf with $75,000+ prize pool
+                </p>
+                <div className="flex gap-2">
+                  <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700">
+                    <Link href="/tournaments/pdga-worlds-2025">Betting Preview</Link>
+                  </Button>
+                  <Button asChild size="sm" variant="outline">
+                    <Link href="https://coolbet.com" target="_blank" rel="noopener noreferrer">
+                      Bet on CoolBet
+                    </Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-l-4 border-l-green-500">
+              <CardHeader>
+                <div className="flex justify-between items-start">
+                  <div>
+                    <CardTitle className="text-lg">European Open</CardTitle>
+                    <CardDescription>Nokia, Finland</CardDescription>
+                  </div>
+                  <Badge variant="outline">Jul 14-20, 2025</Badge>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-gray-600 mb-3">
+                  Elite Series event with international field and unique course design
+                </p>
+                <div className="flex gap-2">
+                  <Button asChild size="sm" className="bg-green-600 hover:bg-green-700">
+                    <Link href="/tournaments/european-open-2025">Betting Preview</Link>
+                  </Button>
+                  <Button asChild size="sm" variant="outline">
+                    <Link href="https://coolbet.com" target="_blank" rel="noopener noreferrer">
+                      Bet on CoolBet
+                    </Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-l-4 border-l-purple-500">
+              <CardHeader>
+                <div className="flex justify-between items-start">
+                  <div>
+                    <CardTitle className="text-lg">DGPT Championship</CardTitle>
+                    <CardDescription>Charlotte, North Carolina</CardDescription>
+                  </div>
+                  <Badge variant="outline">Oct 23-26, 2025</Badge>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-gray-600 mb-3">
+                  Season finale with the top 72 players competing for the title
+                </p>
+                <div className="flex gap-2">
+                  <Button asChild size="sm" className="bg-purple-600 hover:bg-purple-700">
+                    <Link href="/tournaments/dgpt-championship-2025">Betting Preview</Link>
+                  </Button>
+                  <Button asChild size="sm" variant="outline">
+                    <Link href="https://coolbet.com" target="_blank" rel="noopener noreferrer">
+                      Bet on CoolBet
+                    </Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center mt-8">
+            <Button asChild size="lg" variant="outline">
+              <Link href="/tournaments">View Full Tournament Calendar</Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -120,7 +297,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Master Disc Golf Betting</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our comprehensive guides will take you from beginner to expert in disc golf betting.
+              Our comprehensive guides will take you from beginner to expert in disc golf betting with CoolBet.
             </p>
           </div>
 
@@ -137,7 +314,7 @@ export default function HomePage() {
                 </CardHeader>
                 <CardContent>
                   <CardDescription>
-                    Learn the basics of disc golf, rules, scoring, and why it's perfect for betting.
+                    Learn the basics of disc golf, rules, scoring, and why it's perfect for betting on CoolBet.
                   </CardDescription>
                 </CardContent>
               </Link>
@@ -153,7 +330,7 @@ export default function HomePage() {
                 </CardHeader>
                 <CardContent>
                   <CardDescription>
-                    Step-by-step guide to placing your first disc golf bet and understanding odds.
+                    Step-by-step guide to placing your first disc golf bet on CoolBet and understanding odds.
                   </CardDescription>
                 </CardContent>
               </Link>
@@ -169,7 +346,7 @@ export default function HomePage() {
                 </CardHeader>
                 <CardContent>
                   <CardDescription>
-                    Top-rated sportsbooks for disc golf betting with exclusive bonuses and features.
+                    Why CoolBet is the top choice for disc golf betting with exclusive bonuses and features.
                   </CardDescription>
                 </CardContent>
               </Link>
@@ -185,7 +362,7 @@ export default function HomePage() {
                 </CardHeader>
                 <CardContent>
                   <CardDescription>
-                    Understanding betting markets, strategies, and maximizing your winning potential.
+                    Understanding betting markets, CoolBet strategies, and maximizing your winning potential.
                   </CardDescription>
                 </CardContent>
               </Link>
@@ -197,14 +374,14 @@ export default function HomePage() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-blue-900 to-green-800 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6">Ready to Start Winning?</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold mb-6">Ready to Start Winning with CoolBet?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto text-blue-100">
-            Join thousands of successful disc golf bettors who trust our expert analysis and proven strategies.
+            Join thousands of successful disc golf bettors who trust our expert analysis and CoolBet's premium platform.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-green-500 hover:bg-green-600">
               <Link href="https://coolbet.com" target="_blank" rel="noopener noreferrer">
-                Get Started Now <ArrowRight className="ml-2 h-5 w-5" />
+                Join CoolBet Now <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
             <Button
